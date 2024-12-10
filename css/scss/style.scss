@@ -1,0 +1,383 @@
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Colores de Bootstrap Personalizados
+$primary: #aab656;
+$secondary: #446a39;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #b11c7f;
+$danger: #e66007;
+$light: #f8f9fa;
+$dark: #343a40;
+
+//Tooltips
+$tooltip-bg: #aab656;
+$tooltip-color: #242424;
+$tooltip-font-size: 16px;
+
+//Popover
+$popover-bg: #aab656;
+$popover-body-color: #242424;
+$popover-header-bg: #446a39;
+$popover-header-color: #aab656;
+$popover-font-size: 16px;
+$popover-arrow-width: 2rem;
+$popover-arrow-height: 1rem;
+
+//Input
+$input-focus-color: #aab656;
+$input-color: #446a39;
+$input-border-color: #6c7a3a;
+$input-bg: #222420;
+$input-placeholder-color: #868d56;
+
+//Botones
+$btn-border-width: 0px;
+$btn-border-radius: 15px;
+
+//Nav
+$navbar-dark-color: #b69c56;
+$navbar-dark-hover-color: #66b656;
+$navbar-dark-active-color: #aab656;
+$navbar-dark-disabled-color: #d3daa6;
+
+$nav-link-font-size: 20px;
+
+$dropdown-link-color: #b69c56;
+$dropdown-link-hover-color: #66b656;
+$dropdown-link-hover-bg: #2b3129;
+
+//Formulario
+$input-bg: #333331;
+
+
+$form-file-button-color: #2b3129;
+$form-file-button-bg: #b69c56;
+$form-file-button-hover-bg: #e4ca80;
+
+
+//Fuente
+// Importar fuente
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
+// Configurar fuente base
+body {
+  font-family: "Cinzel", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+}
+
+a,
+form,
+button,
+button p,
+tr th,
+.card-text {
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+}
+
+label, select, option, input {
+  color: #aab656 !important;
+}
+
+button #boton-registro {
+background-color: #aab656;
+color: #2b3129;
+}
+
+$body-bg: #121212;
+$body-color: #f8f9fa;
+
+$enable-gradients: true;
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Colores personalizados
+$col-azul: #2b315d;
+$col-azul2: #525ca6;
+$col-azul3: #444b7c;
+$col-naranja: #8a5132;
+$col-naranja2: #a88e6f;
+$col-naranja3: #8b7152;
+$col-rosa: #97516b;
+$col-rosa2: #a57c82;
+$col-rosa3: #78575c;
+
+// Importar Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Estilo para las columnas de la tabla
+
+table .col-azul {
+  background-color: $col-azul;
+  color: #fff; // Texto blanco para contraste
+}
+table .col-azul2 {
+  background-color: $col-azul2;
+  color: #fff; // Texto blanco para contraste
+}
+table .col-azul3 {
+  background-color: $col-azul3;
+  color: #fff; // Texto blanco para contraste
+}
+
+table .col-naranja {
+  background-color: $col-naranja;
+  color: #fff;
+}
+table .col-naranja2 {
+  background-color: $col-naranja2;
+  color: #fff;
+}
+table .col-naranja3 {
+  background-color: $col-naranja3;
+  color: #fff;
+}
+
+table .col-rosa {
+  background-color: $col-rosa;
+  color: #fff;
+}
+table .col-rosa2 {
+  background-color: $col-rosa2;
+  color: #fff;
+}
+table .col-rosa3 {
+  background-color: $col-rosa3;
+  color: #fff;
+}
+
+body {
+  background-image: url("../img/fondo.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  color: #fff;
+}
+
+// Icono del header
+.icono-logo {
+  width: 50px;
+  height: 50px;
+  white-space: normal;
+}
+
+.buscador {
+  width: 250px;
+}
+
+// Imágenes de máscaras
+.mask-image,
+.object-image {
+  width: 100%; // Ocupa el ancho del contenedor
+  height: 100px; // Altura fija
+  object-fit: cover; // Recorta proporcionalmente si es necesario
+}
+
+#main {
+  width: 100%;
+  flex-grow: 1;
+}
+
+/* Ajustes responsivos para el header */
+.navbar-brand {
+  img {
+    height: 100px; // Tamaño del logo
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+.cuaderno {
+  //border: 2px solid #1a1a1a; /* Borde grueso blanco */
+  box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.33);
+  //background-color: #ffffff; /* Fondo blanco */
+  background-image: url("../img/fondoCuaderno.png");
+  //background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  min-height: 100vh;
+}
+
+table {
+  margin: 0; /* Elimina margen en tablas */
+}
+
+#tabla {
+  background-color: rgba(0, 0, 0, 0); /* Fondo blanco */
+  margin: 0; /* Elimina margen en tablas */
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+//Carrusel
+.carousel-inner {
+  height: 600px;
+}
+.carousel-item > img {
+  height: 900px;
+  object-fit: cover;
+}
+
+//Tarjetas
+.card-body {
+  color: #b69c56;
+}
+/*.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: scale(1.025);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }*/
+
+.card-footer button,
+.card-footer a,
+#boton-registro {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s;
+  background-color: #2b3129;
+  color: #b69c56;
+
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  &:hover {
+    background-color: #b69c56;
+    color: #2b3129;
+
+    transform: scale(1.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+//}
+
+// Estilo para máscaras deshabilitadas
+.disabled-mask {
+  pointer-events: none; // Evita interacciones
+  //color: $secondary;
+  opacity: 0.65; // Mantén opacidad para indicar estado desactivado
+  filter: grayscale(
+    100%
+  );
+}
+
+// Personalización para botones desactivados
+/*.btn.disabled,
+.btn:disabled {
+    pointer-events: none; // Evita interacciones
+    background-color: $body-bg; // Fondo apagado (puedes personalizar)
+    color: $secondary; // Cambiar color del texto si es necesario
+    opacity: 0.65; // Mantén opacidad para indicar estado desactivado
+
+    &:hover, &:focus {
+        background-color: $body-bg; // Sin efecto hover
+        box-shadow: none; // Sin sombra
+        cursor: not-allowed; // Cursor de no permitido
+    }
+}*/
+
+.my-4 {
+  display: none !important;
+}
+
+@media (max-width: 990px) {
+  .my-4 {
+    display: block !important;
+  }
+
+  .navbar {
+    //text-align: center;
+  }
+
+  /*.navbar-brand {
+    order: 1; // El logo aparece primero
+  }
+
+  .navbar-toggler {
+    order: 2; // El botón hamburguesa aparece después
+  }*/
+
+  .buscador {
+    width: 100%; // Buscador ocupa todo el ancho en móviles
+  }
+
+  /* Asegura que el menú aparezca debajo del botón hamburguesa */
+  .navbar-collapse {
+    position: relative;
+    top: 10px;
+    z-index: 1000;
+  }
+
+  /* Centrar los elementos del menú desplegable */
+  /*.navbar-nav {
+    text-align: center;
+    width: 100%;
+  }*/
+
+  table th,
+  table td {
+    font-size: 12px;
+    white-space: nowrap; /* Evita saltos de línea */
+  }
+}
+
+@media (max-width: 576px) {
+  // Ocultar carrusel en móviles
+  #carouselMajorasMask {
+    display: none !important;
+  }
+
+  .my-4 {
+    display: block !important;
+  }
+
+  .navbar {
+    text-align: center;
+  }
+
+  /*.navbar-brand {
+    order: 1; // El logo aparece primero
+  }
+
+  .navbar-toggler {
+    order: 2; // El botón hamburguesa aparece después
+  }*/
+
+  .buscador {
+    width: 100%; // Buscador ocupa todo el ancho en móviles
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Asegura que el menú aparezca debajo del botón hamburguesa */
+  .navbar-collapse {
+    position: relative;
+    top: 10px;
+    z-index: 1000;
+  }
+
+  /* Centrar los elementos del menú desplegable */
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  table th,
+  table td {
+    font-size: 12px;
+    white-space: nowrap; /* Evita saltos de línea */
+  }
+}
+
+
