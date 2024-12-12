@@ -9,7 +9,7 @@
     <!-- Estilo Personalizado -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column">
     <!-- Header -->
     <div id="header"></div>
 
@@ -18,18 +18,121 @@
       <hr class="my-4" />
     </div>
 
-    <main
-      class="container my-5 p-10 flex-grow-1 min-vh-100 d-flex justify-content-center"
-    >
-      <div class="text-center">
-        <h1>Trucos y consejos</h1>
-        <p>
-          Esta página se encuentra en construcción. Volveremos pronto con más
-          contenido.
-        </p>
-        <img src="img/tingle.webp" alt="Tingle" class="img-fluid" />
+    <!-- Contenido principal -->
+    <div class="container my-5 flex-grow-1">
+      <ul class="nav nav-tabs" id="tabContent" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="trucos-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#trucos"
+            type="button"
+            role="tab"
+            aria-controls="trucos"
+            aria-selected="true"
+          >
+            Trucos
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="consejos-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#consejos"
+            type="button"
+            role="tab"
+            aria-controls="consejos"
+            aria-selected="false"
+          >
+            Consejos
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="tabContentContent">
+        <!-- Contenido de Trucos -->
+        <div
+          class="tab-pane fade show active"
+          id="trucos"
+          role="tabpanel"
+          aria-labelledby="trucos-tab"
+        >
+          <div class="mt-4">
+            <h3>Trucos</h3>
+            <p>
+              Aprende cómo aprovechar al máximo tus habilidades y superar los
+              retos del juego con estos trucos.
+            </p>
+            <div>
+              <hr />
+              <h4>Gana en la Carrera de Perros con la Máscara de la Verdad</h4>
+              <p>
+                Usa la Máscara de la Verdad para leer los pensamientos de los
+                perros antes de apostar en la carrera de perros en Romani Ranch.
+                Elige al perro que diga algo como "¡Hoy me siento imparable!" o
+                "¡Voy a ganar esta carrera!". Esto aumentará tus posibilidades
+                de elegir al ganador.
+              </p>
+              <hr />
+              <h4>Evita el Daño por Caída con el Rodar Goron</h4>
+              <p>
+                Mientras usas la Máscara Goron, si saltas desde una gran altura,
+                asegúrate de estar en posición de rodar justo antes de tocar el
+                suelo. Esto anula el daño por caída y te permite explorar más
+                libremente.
+              </p>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <!-- Contenido de Consejos -->
+        <div
+          class="tab-pane fade"
+          id="consejos"
+          role="tabpanel"
+          aria-labelledby="consejos-tab"
+        >
+          <div class="mt-4">
+            <h3>Consejos</h3>
+            <p>
+              Descubre estrategias y recomendaciones para progresar en el juego
+              de manera más eficiente.
+            </p>
+            <div>
+              <hr />
+              <h4>Usa el tiempo sabiamente</h4>
+              <p>
+                Utiliza la Canción del Tiempo Invertida (Down, A, Right, Down,
+                A, Right) para ralentizar el tiempo y tener más margen en tus
+                aventuras. Es crucial para misiones largas o difíciles.
+              </p>
+              <hr />
+              <h4>Duplicar tus Rupias</h4>
+              <p>
+                Depósitalas en el banco de Clock Town antes de viajar en el
+                tiempo. Aunque regreses al Día 1, las rupias en el banco se
+                conservan.
+              </p>
+              <hr />
+              <h4>Recuperar flechas y bombas rápidamente</h4>
+              <p>
+                Ataca arbustos en diferentes zonas o derrota enemigos comunes
+                para reabastecerte sin gastar rupias.
+              </p>
+              <hr />
+              <h4>El poder de las máscaras</h4>
+              <p>
+                No subestimes máscaras como la Máscara de Piedra. Es
+                increíblemente útil para volverte invisible frente a enemigos
+                como las momias.
+              </p>
+              <hr />
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
 
     <!-- Footer -->
     <div id="footer"></div>

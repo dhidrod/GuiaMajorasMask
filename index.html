@@ -22,7 +22,7 @@
     <script src="js/cargarEncPie.js"></script>
     <script src="js/iniToolTips.js"></script>
   </head>
-  <body>
+  <body class="d-flex flex-column">
     <!-- Header -->
     <div id="header"></div>
     
@@ -44,16 +44,19 @@
           data-bs-target="#carouselMajorasMask"
           data-bs-slide-to="0"
           class="active"
+          aria-label="Mostrar imagen 1 del carrusel"
         ></button>
         <button
           type="button"
           data-bs-target="#carouselMajorasMask"
           data-bs-slide-to="1"
+          aria-label="Mostrar imagen 2 del carrusel"
         ></button>
         <button
           type="button"
           data-bs-target="#carouselMajorasMask"
           data-bs-slide-to="2"
+          aria-label="Mostrar imagen 3 del carrusel"
         ></button>
       </div>
       <div class="carousel-inner w-75">
@@ -85,7 +88,7 @@
     <!-- Contenido -->
     <main
       id="main"
-      class="container-fluid my-5 p-10 flex-grow-1 min-vh-100 mb-5"
+      class="container-fluid my-5 p-10 flex-grow-1 mb-5"
     >
       <div class="container">
         <div class="card-group">
@@ -137,57 +140,11 @@
               </p>
             </div>
             <div class="card-footer text-center">
-              <a href="consejos.html" class="btn btn-primary">Aprender más</a>
+              <a href="consejos.html" class="btn btn-primary">Ver Consejos</a>
             </div>
           </div>
         </div>
       </div>
-
-      <!--<section class="container p-10 rounded mt-5">
-        <p class="text-justify">
-          The Legend of Zelda: Majora's Mask es una joya atemporal en el mundo
-          de los videojuegos, lanzada para la Nintendo 64 en el año 2000. Este
-          título, desarrollado por Nintendo, es la secuela directa de The Legend
-          de Zelda: Ocarina of Time y se destaca por su atmósfera oscura y su
-          innovadora mecánica de juego. En esta aventura, el héroe Link se
-          encuentra en la misteriosa tierra de Termina, un lugar al borde de la
-          destrucción inminente debido a la caída de la luna. Con solo tres días
-          para salvar el mundo, los jugadores deben utilizar la Ocarina del
-          Tiempo para retroceder en el tiempo y completar diversas misiones
-          antes de que se acabe el plazo. La narrativa profunda y los personajes
-          memorables hacen de Majora's Mask una experiencia única y envolvente
-          que ha dejado una marca indeleble en la historia de los videojuegos.
-        </p>
-      </section>-->
-
-      <!-- De prueba -->
-      <!--<div class="container">
-        <p>
-          Si tienes alguna duda o pregunta, no dudes en rellenar el siguiente
-          formulario. Estaremos encantados de ayudarte.
-        </p>
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Dirección de correo electrónico</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-            <div id="emailHelp" class="form-text">
-              Nunca compartiremos tu correo electrónico con nadie más.
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="pregunta" class="form-label">Preguntas o dudas</label>
-            <textarea class="form-control" id="pregunta" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-      </div>-->
     </main>
 
     <!-- Footer -->
