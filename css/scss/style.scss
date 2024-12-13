@@ -123,6 +123,27 @@ $col-rosa3: #78575c;
 
 // Estilo para las columnas de la tabla
 
+th {
+  position: relative;
+
+  &::after {
+    content: "\f06a"; // Icono de exclamación FontAwesome
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+}
+
 table .col-azul {
   background-color: $col-azul;
   color: #fff; // Texto blanco para contraste
@@ -274,11 +295,21 @@ table {
 // Estilo para máscaras deshabilitadas
 .disabled-mask {
   pointer-events: none; // Evita interacciones
-  //color: $secondary;
-  opacity: 0.65; // Mantén opacidad para indicar estado desactivado
   filter: grayscale(
     100%
   );
+
+  // Indicador de que el objeto aún está en desarrollo
+  &::after {
+    content: "PROXIMAMENTE";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 }
 
 // Personalización para botones desactivados

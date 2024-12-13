@@ -22,7 +22,7 @@
       <h1 class="text-center">Regístrate</h1>
 
       <!-- Formulario de registro -->
-      <form class="row g-3">
+      <form class="row g-3 needs-validation" novalidate>
         <div class="col-md-6">
           <label for="nombre" class="form-label">Nombre</label>
           <input
@@ -30,7 +30,11 @@
             class="form-control"
             id="nombre"
             placeholder="Nombre completo"
+            required
           />
+          <div class="invalid-feedback">
+            Debe ingresar su nombre
+          </div>
         </div>
         <div class="col-md-6">
           <label for="correo" class="form-label">Correo Electrónico</label>
@@ -39,7 +43,11 @@
             class="form-control"
             id="correo"
             placeholder="correo@ejemplo.com"
+            required
           />
+          <div class="invalid-feedback">
+            Debe ingresar un correo electrónico válido
+          </div>
         </div>
         <div class="col-md-6">
           <label for="clave" class="form-label">Contraseña</label>
@@ -48,7 +56,11 @@
             class="form-control"
             id="clave"
             placeholder="Contraseña"
+            required
           />
+          <div class="invalid-feedback">
+            Debe ingresar una contraseña
+          </div>
         </div>
         <div class="col-md-6">
           <label for="clave2" class="form-label">Repite la contraseña</label>
@@ -57,22 +69,32 @@
             class="form-control"
             id="clave2"
             placeholder="Repite la contraseña"
+            required
           />
+          <div class="invalid-feedback">
+            Las contraseñas deben coincidir
+          </div>
         </div>
         <div class="col-md-6">
           <label for="fechaNacimiento" class="form-label"
             >Fecha de nacimiento</label
           >
-          <input type="date" class="form-control" id="fechaNacimiento" />
+          <input type="date" class="form-control" id="fechaNacimiento" required />
+          <div class="invalid-feedback">
+            Debe ingresar su fecha de nacimiento
+          </div>
         </div>
         <div class="col-md-6">
           <label for="genero" class="form-label">Género</label>
-          <select class="form-select" id="genero">
+          <select class="form-select" id="genero" required>
             <option value="">Seleccione una opción</option>
             <option value="masculino">Masculino</option>
             <option value="femenino">Femenino</option>
             <option value="otro">Otro</option>
           </select>
+          <div class="invalid-feedback">
+            Debe seleccionar un género
+          </div>
         </div>
         <div class="col-md-6">
           <label for="perfil" class="form-label">Subir imagen de perfil</label>
@@ -85,10 +107,13 @@
         </div>
         <div class="col-12">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="terminos" />
+            <input class="form-check-input" type="checkbox" id="terminos" required />
             <label class="form-check-label" for="terminos">
               Acepto los términos y condiciones
             </label>
+            <div class="invalid-feedback">
+              Debe aceptar los términos y condiciones
+            </div>
           </div>
         </div>
         <div class="col-12">
@@ -109,5 +134,23 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/cargarEncPie.js"></script>
     <script src="js/iniToolTips.js"></script>
+    <script>
+      (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+    </script>
   </body>
 </html>
+
+
