@@ -12014,12 +12014,12 @@ body {
 }
 
 table {
-  margin: 0; /* Elimina margen en tablas */
+  margin: 0;
 }
 
 #tabla {
-  background-color: rgba(0, 0, 0, 0); /* Fondo blanco */
-  margin: 0; /* Elimina margen en tablas */
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
 }
 
 .table td,
@@ -12040,12 +12040,6 @@ table {
   color: #b69c56;
 }
 
-/*.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  &:hover {
-    transform: scale(1.025);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  }*/
 .card-footer button,
 .card-footer a,
 #boton-registro {
@@ -12080,19 +12074,6 @@ table {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/*.btn.disabled,
-.btn:disabled {
-    pointer-events: none; // Evita interacciones
-    background-color: $body-bg; // Fondo apagado (puedes personalizar)
-    color: $secondary; // Cambiar color del texto si es necesario
-    opacity: 0.65; // Mantén opacidad para indicar estado desactivado
-
-    &:hover, &:focus {
-        background-color: $body-bg; // Sin efecto hover
-        box-shadow: none; // Sin sombra
-        cursor: not-allowed; // Cursor de no permitido
-    }
-}*/
 .my-4 {
   display: none !important;
 }

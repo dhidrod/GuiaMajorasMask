@@ -10,12 +10,12 @@ $danger: #e66007;
 $light: #f8f9fa;
 $dark: #343a40;
 
-//Tooltips
+// Tooltips
 $tooltip-bg: #aab656;
 $tooltip-color: #242424;
 $tooltip-font-size: 16px;
 
-//Popover
+// Popover
 $popover-bg: #aab656;
 $popover-body-color: #242424;
 $popover-header-bg: #446a39;
@@ -24,18 +24,18 @@ $popover-font-size: 16px;
 $popover-arrow-width: 2rem;
 $popover-arrow-height: 1rem;
 
-//Input
+// Input
 $input-focus-color: #aab656;
 $input-color: #446a39;
 $input-border-color: #6c7a3a;
 $input-bg: #222420;
 $input-placeholder-color: #868d56;
 
-//Botones
+// Botones
 $btn-border-width: 0px;
 $btn-border-radius: 15px;
 
-//Nav
+// Nav
 $navbar-dark-color: #b69c56;
 $navbar-dark-hover-color: #66b656;
 $navbar-dark-active-color: #aab656;
@@ -47,14 +47,14 @@ $dropdown-link-color: #b69c56;
 $dropdown-link-hover-color: #66b656;
 $dropdown-link-hover-bg: #2b3129;
 
-//Formulario
+// Formulario
 $input-bg: #333331;
 
 $form-file-button-color: #2b3129;
 $form-file-button-bg: #b69c56;
 $form-file-button-hover-bg: #e4ca80;
 
-//Pestañas
+// Pestañas
 $nav-tabs-border-color: #b69c56;
 $nav-tabs-link-active-bg: #b69c56;
 $nav-tabs-link-active-border-color: #b69c56;
@@ -62,7 +62,7 @@ $nav-tabs-link-hover-border-color: #d3daa6;
 $nav-link-color: #868d56;
 $nav-link-hover-color: #aab656;
 
-//Fuente
+// Fuente
 // Importar fuente
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
 
@@ -146,15 +146,15 @@ th {
 
 table .col-azul {
   background-color: $col-azul;
-  color: #fff; // Texto blanco para contraste
+  color: #fff;
 }
 table .col-azul2 {
   background-color: $col-azul2;
-  color: #fff; // Texto blanco para contraste
+  color: #fff;
 }
 table .col-azul3 {
   background-color: $col-azul3;
-  color: #fff; // Texto blanco para contraste
+  color: #fff;
 }
 
 table .col-naranja {
@@ -229,22 +229,19 @@ body {
 }
 
 .cuaderno {
-  //border: 2px solid #1a1a1a; /* Borde grueso blanco */
   box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.33);
-  //background-color: #ffffff; /* Fondo blanco */
   background-image: url("../img/fondoCuaderno.png");
-  //background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
 }
 
 table {
-  margin: 0; /* Elimina margen en tablas */
+  margin: 0;
 }
 
 #tabla {
-  background-color: rgba(0, 0, 0, 0); /* Fondo blanco */
-  margin: 0; /* Elimina margen en tablas */
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
 }
 
 .table td,
@@ -265,12 +262,6 @@ table {
 .card-body {
   color: #b69c56;
 }
-/*.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  &:hover {
-    transform: scale(1.025);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  }*/
 
 .card-footer button,
 .card-footer a,
@@ -290,7 +281,6 @@ table {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
   }
 }
-//}
 
 // Estilo para máscaras deshabilitadas
 .disabled-mask {
@@ -312,21 +302,6 @@ table {
   }
 }
 
-// Personalización para botones desactivados
-/*.btn.disabled,
-.btn:disabled {
-    pointer-events: none; // Evita interacciones
-    background-color: $body-bg; // Fondo apagado (puedes personalizar)
-    color: $secondary; // Cambiar color del texto si es necesario
-    opacity: 0.65; // Mantén opacidad para indicar estado desactivado
-
-    &:hover, &:focus {
-        background-color: $body-bg; // Sin efecto hover
-        box-shadow: none; // Sin sombra
-        cursor: not-allowed; // Cursor de no permitido
-    }
-}*/
-
 .my-4 {
   display: none !important;
 }
@@ -336,12 +311,8 @@ table {
     display: block !important;
   }
 
-  .navbar {
-    //text-align: center;
-  }
-
   .buscador {
-    width: 100%; // Buscador ocupa todo el ancho en móviles
+    width: 100%;
   }
 
   /* Asegura que el menú aparezca debajo del botón hamburguesa */
@@ -373,7 +344,7 @@ table {
   }
 
   .buscador {
-    width: 100%; // Buscador ocupa todo el ancho en móviles
+    width: 100%;
     margin: 0 auto;
     display: block;
   }
@@ -397,5 +368,3 @@ table {
     white-space: nowrap; /* Evita saltos de línea */
   }
 }
-
-
